@@ -13,7 +13,7 @@ export function printTreeShape(root, spaceCnt = 0) {
     printTreeShape(root.left, spaceCnt + 10);
 }
 
-export function arrayToTree(arr) {
+export function arrayToTree(...arr) {
     if (!arr || !arr.length) {
         return null;
     }
@@ -38,5 +38,5 @@ export function arrayToTree(arr) {
 }
 
 
-const root = arrayToTree([]);
+const root = arrayToTree(1, 2, 3, 4, 5, 6);
 printTreeShape(root);

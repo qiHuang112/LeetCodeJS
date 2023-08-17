@@ -18,6 +18,6 @@ var inorderTraversal = function (root) {
     return arr;
 };
 
-console.log(inorderTraversal(arrayToTree([1, null, 2, 3])));
-console.log(inorderTraversal(arrayToTree([])));
-console.log(inorderTraversal(arrayToTree([1])));
+console.log(inorderTraversal(arrayToTree(1, null, 2, 3)));
+console.log(inorderTraversal(arrayToTree()));
+console.log(inorderTraversal(arrayToTree(1)));
